@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="https://cdn-icons-png.flaticon.com/512/757/757623.png">
+    <title>Lista de Contatos</title>
+</head>
+<body>
+    <form role="form" id="form-contato-create" onsubmit="salvar()">
+        <div class="box-body">
+
+          <div class="form-group">
+            <label for="exampleInputName">Nome</label>
+            <input required type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do contato" name="name"/>
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleInputEmail1">E-mail</label>
+            <input required type="email" class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputTel">Telefone</label>
+            <input required type="tel" class="form-control" id="exampleInputTel" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s?([0-9]{4,5})-([0-9]{4})" name="telefone" title="Por favor, digite um número de telefone válido no formato (XX) XXXXX-XXXX." />
+          </div>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          <button type="submit" class="btn btn-success">
+            Salvar
+          </button>
+        </div>
+      </form>
+
+      <div id="contato">
+      </div>
+
+
+    <script src="js/contato.js"></script>
+    <script src="js/app.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+</html>
